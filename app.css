@@ -1,0 +1,65 @@
+/* Body resets */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: "PT Sans", Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Watchface */
+#watchface-model-b {
+  width: 256px;
+  margin: 2rem auto;
+}
+
+rect,
+circle,
+tspan {
+  fill: #fff;
+}
+
+.is-active { fill: #222 !important; }
+
+rect,
+circle,
+tspan {
+  -webkit-transition: fill 2s ease;
+     -moz-transition: fill 2s ease;
+      -ms-transition: fill 2s ease;
+          transition: fill 2s ease;
+}
+
+/* Footer */
+#footer { text-align: center; }
+
+#footer img {
+  -webkit-transition: all .25s ease;
+     -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+          transition: all .25s ease;
+}
+
+#footer img:hover {
+  -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
